@@ -317,30 +317,40 @@ llm-benchmark/
 ## Как запустить
 
 ### 1. Установка зависимостей
+```bash
 pip install -r requirements.txt
+```
 
 ### 2. Настройка окружения
 Создайте файл `.env` и добавьте API-ключи:
-
+```markdown
 GROQ_API_KEY=your_key 
-OPENAI_API_KEY=your_key 
+OPENAI_API_KEY=your_key
+```
 
 ### 3. Запуск бенчмарка
 Пример запуска модели:
 
+```bash
 python models/run_llama.py
+```
 
 или:
-
+```bash
 python models/run_qwen.py
+```
 
 ### 4. Подсчёт метрик
+```bash
 python -m evaluation.evaluate
+```
 
 ### 5. Анализ результатов
 Откройте ноутбук:
 
+```markdown
 analysis/benchmark_metrics_analysis.ipynb
+```
 
 ---
 
